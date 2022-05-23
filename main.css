@@ -1,0 +1,204 @@
+:root {
+    --button: #FF0000;
+    --main-background:  #C4C4C4;
+    --background: #E5E5E5;
+    --text: #000;
+    --footer: #000;
+    --text-description: #9C9696;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1440px;
+    height: 1080px;
+    background: var(--background);
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-areas: 
+    "navbar navbar"
+    "preco main"
+    "footer footer";
+}
+
+                  /* Area de navegacao */
+.navBar {
+    width: 1320px;
+    height: 48px;
+    margin: auto;
+    margin-top: 39px;
+    z-index: 1;
+}
+/* --------------------------------------------------------- */
+                /* Area do preco */
+.preco {
+    grid-area: preco;
+    grid-row: 1;
+    width: 357px;
+    height: 533px;
+    margin-left: 111px;
+    margin-top: 190px;
+}
+
+.preco h2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 70px;
+    
+    color: var(--text);
+}
+
+.preco p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 21px;
+
+    color: var(--text-description);
+}
+
+.preco h3{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    margin-top: 30px;
+    color: var(--text);
+}
+
+.preco button{
+    background-color: var(--button);
+    width: 274px;
+    height: 90px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    margin-top: 30px;
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+/* --------------------------------------------------------- */
+                /* Area do main */
+.main {
+    grid-area: main;
+    grid-row: -4;
+    width: 900px;
+    height: 914px;
+    margin-left: 72px;
+    background-color: var(--main-background);
+    display: grid;
+    grid-template-areas: 
+    "tenisZoom tenisZoom tenisZoom"
+    "tenis1 tenis2 tenis3"
+}
+
+#tenisZoom {
+    grid-area: tenisZoom;
+    margin-top: 174.68px;
+    margin-left: 157px;
+    width: 597px;
+    height: 510.82px;
+}
+
+#tenis1 {
+    grid-area: tenis1;
+    margin-left: 18px;
+    margin-right: 0;
+    width: 269.51px;
+    height: 182.8px;
+}
+
+#tenis2 {
+    grid-area: tenis2;
+    margin-left: 18.74px;
+    margin-right: -16px;
+    width: 250px;
+    height: 187.88px;
+    border-bottom: 5px solid red;
+}
+
+#tenis3 {
+    grid-area: tenis3;
+    margin-left: 37px;
+    width: 270px;
+    height: 182.8px;
+}
+/* --------------------------------------------------------- */
+
+.footer {
+    grid-area: footer;
+    display: flex;
+}
+
+.footer img {
+    width: 250px;
+    height: 166.33px;
+}
+
+.footer ul {
+    list-style: none;
+    display:flex;
+    align-items: center;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+
+    color: #000000;
+}
+
+#footerFace {
+    margin-left: 47px;
+}
+
+#footerInsta{
+    margin-left: 90px;
+}
+
+#footerYt {
+    margin-left: 90px;
+}
+
+#footerTT {
+    margin-left: 90px;
+    margin-right: 77px;
+}
+
+.footer button {
+    width: 446px;
+    height: 166px;
+    background-color: #000000;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    background-image: url(./assets/icon-arrow.svg);
+    background-repeat: no-repeat;
+    background-position-x: 311px;
+    background-position-y: 68px;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
